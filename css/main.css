@@ -1,0 +1,81 @@
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+    background-color: aqua;
+}
+
+.header {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    line-height: 0.7;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+.header span {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.content {
+    /* Добавить класс хедеру и футеру для равнения по ширине с контентом */
+    max-width: 1200px;
+    /*min-width: 576px; мешает тегу <meta name="viewport*/
+    margin: 0 auto;
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+.pre-info {
+    height: 100px;
+    width: 950px;
+}
+
+.post-block {
+    height: 100px;
+    width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.heal-point {
+    height: 25px;
+    width: 250px;
+}
+
+.next-step {
+    display: block;
+    margin: 10px 0;
+    height: 40px;
+    width: 120px;
+}
+
+/* Дубер футера для прижатия к низу экрана */
+.clr:after {
+    content: "";
+    height: 50px;
+    display: block;
+}
+
+/* /Дублёр футера */
+footer {
+    height: 50px;
+    margin-top: -50px;
+    background-color: #ccc;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
